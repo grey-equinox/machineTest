@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!--nav  class="navbar navbar-light bg-light"-->    
+    <!-- <a routerLink="" (click)="goHome()" 
+    class="navbar-brand" 
+    style="color:aliceblue;">Home</a> -->
+
+    <div class="container-fluid">
+        <ul class="nav nav-pills nav-fill">
+            <li>
+                <img src="./assets/bkor-logo-black.png" height="36">
+            </li>
+            <li class="nav-item active">
+                <a routerLink="" (click)="goHome()" 
+                    class="navbar-brand" 
+                    style="color:rgb(97, 153, 202);">Home</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav text-right">
+            <a style="margin-right: 5px;" class="btn btn-secondary">{{userName}} - {{roleName}}</a>
+            <li class="nav-item">
+                <a routerLink="" (click)="logOut()" 
+                    class="navbar-brand" 
+                    style="color:salmon;">Log-Out
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- <div class="navbar-collapse"></div> -->
